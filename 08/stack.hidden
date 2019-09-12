@@ -1,0 +1,4 @@
+        at Foo.bar(Foo.java:5)
+        at java.lang.invoke.LambdaForm$DMH/1252169911.invokeStatic_L_V(LambdaForm$DMH:1000010)
+        at java.lang.invoke.LambdaForm$MH/1304836502.invokeExact_MT(LambdaForm$MH:1000016)
+        at Foo.main(Foo.java:12)
