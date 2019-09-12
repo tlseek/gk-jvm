@@ -1,0 +1,131 @@
+Classfile /root/learn/jvm/09/Circuit.class
+  Last modified 2019-9-12; size 1233 bytes
+  MD5 checksum 3101c6302b4785f8c188884c358202ef
+  Compiled from "Circuit.java"
+public class Circuit
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #12.#30        // java/lang/Object."<init>":()V
+   #2 = Class              #31            // Horse
+   #3 = Methodref          #2.#30         // Horse."<init>":()V
+   #4 = Methodref          #11.#32        // Circuit.startRace:(Ljava/lang/Object;)V
+   #5 = Fieldref           #33.#34        // java/lang/Void.TYPE:Ljava/lang/Class;
+   #6 = Methodref          #35.#36        // java/lang/invoke/MethodType.methodType:(Ljava/lang/Class;)Ljava/lang/invoke/MethodType;
+   #7 = Methodref          #22.#37        // java/lang/invoke/MethodHandles$Lookup.findVirtual:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+   #8 = Class              #38            // java/lang/invoke/ConstantCallSite
+   #9 = Methodref          #39.#40        // java/lang/invoke/MethodHandle.asType:(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+  #10 = Methodref          #8.#41         // java/lang/invoke/ConstantCallSite."<init>":(Ljava/lang/invoke/MethodHandle;)V
+  #11 = Class              #42            // Circuit
+  #12 = Class              #43            // java/lang/Object
+  #13 = Utf8               <init>
+  #14 = Utf8               ()V
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               startRace
+  #18 = Utf8               (Ljava/lang/Object;)V
+  #19 = Utf8               main
+  #20 = Utf8               ([Ljava/lang/String;)V
+  #21 = Utf8               bootstrap
+  #22 = Class              #45            // java/lang/invoke/MethodHandles$Lookup
+  #23 = Utf8               Lookup
+  #24 = Utf8               InnerClasses
+  #25 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #26 = Utf8               Exceptions
+  #27 = Class              #46            // java/lang/Throwable
+  #28 = Utf8               SourceFile
+  #29 = Utf8               Circuit.java
+  #30 = NameAndType        #13:#14        // "<init>":()V
+  #31 = Utf8               Horse
+  #32 = NameAndType        #17:#18        // startRace:(Ljava/lang/Object;)V
+  #33 = Class              #47            // java/lang/Void
+  #34 = NameAndType        #48:#49        // TYPE:Ljava/lang/Class;
+  #35 = Class              #50            // java/lang/invoke/MethodType
+  #36 = NameAndType        #51:#52        // methodType:(Ljava/lang/Class;)Ljava/lang/invoke/MethodType;
+  #37 = NameAndType        #53:#54        // findVirtual:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+  #38 = Utf8               java/lang/invoke/ConstantCallSite
+  #39 = Class              #55            // java/lang/invoke/MethodHandle
+  #40 = NameAndType        #56:#57        // asType:(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+  #41 = NameAndType        #13:#58        // "<init>":(Ljava/lang/invoke/MethodHandle;)V
+  #42 = Utf8               Circuit
+  #43 = Utf8               java/lang/Object
+  #44 = Class              #59            // java/lang/invoke/MethodHandles
+  #45 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #46 = Utf8               java/lang/Throwable
+  #47 = Utf8               java/lang/Void
+  #48 = Utf8               TYPE
+  #49 = Utf8               Ljava/lang/Class;
+  #50 = Utf8               java/lang/invoke/MethodType
+  #51 = Utf8               methodType
+  #52 = Utf8               (Ljava/lang/Class;)Ljava/lang/invoke/MethodType;
+  #53 = Utf8               findVirtual
+  #54 = Utf8               (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+  #55 = Utf8               java/lang/invoke/MethodHandle
+  #56 = Utf8               asType
+  #57 = Utf8               (Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+  #58 = Utf8               (Ljava/lang/invoke/MethodHandle;)V
+  #59 = Utf8               java/lang/invoke/MethodHandles
+{
+  public Circuit();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 17: 0
+
+  public static void startRace(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 22: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: new           #2                  // class Horse
+         3: dup
+         4: invokespecial #3                  // Method Horse."<init>":()V
+         7: invokestatic  #4                  // Method startRace:(Ljava/lang/Object;)V
+        10: return
+      LineNumberTable:
+        line 25: 0
+        line 27: 10
+
+  public static java.lang.invoke.CallSite bootstrap(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType) throws java.lang.Throwable;
+    descriptor: (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=3
+         0: aload_0
+         1: ldc           #2                  // class Horse
+         3: aload_1
+         4: getstatic     #5                  // Field java/lang/Void.TYPE:Ljava/lang/Class;
+         7: invokestatic  #6                  // Method java/lang/invoke/MethodType.methodType:(Ljava/lang/Class;)Ljava/lang/invoke/MethodType;
+        10: invokevirtual #7                  // Method java/lang/invoke/MethodHandles$Lookup.findVirtual:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+        13: astore_3
+        14: new           #8                  // class java/lang/invoke/ConstantCallSite
+        17: dup
+        18: aload_3
+        19: aload_2
+        20: invokevirtual #9                  // Method java/lang/invoke/MethodHandle.asType:(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
+        23: invokespecial #10                 // Method java/lang/invoke/ConstantCallSite."<init>":(Ljava/lang/invoke/MethodHandle;)V
+        26: areturn
+      LineNumberTable:
+        line 30: 0
+        line 31: 14
+    Exceptions:
+      throws java.lang.Throwable
+}
+SourceFile: "Circuit.java"
+InnerClasses:
+     public static final #23= #22 of #44; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
