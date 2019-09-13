@@ -3,12 +3,14 @@ import java.lang.invoke.*;
 class Horse {
   public void race() {
     System.out.println("Horse.race()"); 
+    new Exception().printStackTrace();
   }
 }
 
 class Deer {
   public void race() {
     System.out.println("Deer.race()");
+    new Exception().printStackTrace();
   }
 }
 
@@ -23,7 +25,7 @@ public class Circuit {
 
   public static void main(String[] args) {
     startRace(new Horse());
-    // startRace(new Deer());
+    startRace(new Deer());
   }
   
   public static CallSite bootstrap(MethodHandles.Lookup l, String name, MethodType callSiteType) throws Throwable {

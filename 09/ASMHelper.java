@@ -11,7 +11,7 @@ public class ASMHelper implements Opcodes {
 
   private static class MyMethodVisitor extends MethodVisitor {
 
-    private static final String BOOTSTRAP_CLASS_NAME = Circuit.class.getName().replace('.', '/');
+    private static final String BOOTSTRAP_CLASS_NAME = MonomorphicInlineCache.class.getName().replace('.', '/');
     private static final String BOOTSTRAP_METHOD_NAME = "bootstrap";
     private static final String BOOTSTRAP_METHOD_DESC = MethodType
         .methodType(CallSite.class, MethodHandles.Lookup.class, String.class, MethodType.class)
