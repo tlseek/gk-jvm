@@ -6,7 +6,7 @@ import org.openjdk.jcstress.infra.results.IntResult2;
 @Outcome(id = {"0, 0", "0, 2", "1, 0"}, expect = Expect.ACCEPTABLE, desc = "Normal outcome")
 @Outcome(id = {"1, 2"}, expect = Expect.ACCEPTABLE_INTERESTING, desc = "Abnormal outcome")
 @State
-// 运行并没有出现 1, 2的情况
+// 虚拟机 openjdk 运行并没有出现 1, 2的情况，windows oracle出现了
 public class ConcurrencyTest {
   int a=0;
   int b=0; // 改成 volatile 试试？
